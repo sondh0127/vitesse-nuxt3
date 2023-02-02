@@ -1,32 +1,32 @@
 <template>
   <div class="flex flex-wrap gap-2">
-    <HChip icon="i-bx-user">
+    <AChip icon="i-bx-user">
       <span>User</span>
-    </HChip>
-    <HChip
+    </AChip>
+    <AChip
       color="success"
       icon="i-bx-bxs-battery-charging"
     >
       <span>Charging</span>
-    </HChip>
-    <HChip
+    </AChip>
+    <AChip
       color="info"
       icon="i-bx-wrench"
     >
       <span>Settings</span>
-    </HChip>
-    <HChip
+    </AChip>
+    <AChip
       color="warning"
       icon="i-bx-car"
     >
       <span>Traffic</span>
-    </HChip>
-    <HChip
+    </AChip>
+    <AChip
       color="danger"
       icon="i-bx-trash"
       append-icon="i-bx-trash"
     >
       <span>Remove</span>
-    </HChip>
+    </AChip>
   </div>
 </template>

@@ -1,23 +1,23 @@
 <template>
   <div class="grid-row">
-    <HAlert>
+    <AAlert>
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert color="success">
+    <AAlert color="success">
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert color="info">
+    <AAlert color="info">
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert color="warning">
+    <AAlert color="warning">
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert color="danger">
+    <AAlert color="danger">
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
   </div>
 </template>

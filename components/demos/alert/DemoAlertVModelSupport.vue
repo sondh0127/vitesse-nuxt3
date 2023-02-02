@@ -6,9 +6,9 @@ const isVisible = ref(true)
 
 <template>
   <div class="grid-row">
-    <HAlert v-model="isVisible">
+    <AAlert v-model="isVisible">
       <span>Fruitcake I love liquorice apple pie croissant.</span>
-    </HAlert>
+    </AAlert>
 
     <ABtn @click="isVisible = !isVisible">
       Toggle visibility

@@ -15,7 +15,7 @@ const reset = () => chips.value.forEach(chip => chip.isOpen = true)
 
 <template>
   <div class="flex flex-wrap gap-2">
-    <HChip
+    <AChip
       v-for="chip in chips"
       :key="chip.title"
       v-model="chip.isOpen"
@@ -23,7 +23,7 @@ const reset = () => chips.value.forEach(chip => chip.isOpen = true)
       closable
     >
       {{ chip.title }}
-    </HChip>
+    </AChip>
 
     <div class="w-full">
       <ABtn

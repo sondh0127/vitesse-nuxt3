@@ -15,13 +15,13 @@ const { options, select, value } = useGroupModel({
 
 <template>
   <div class="flex mb-4 gap-2">
-    <HChip
+    <AChip
       v-for="option in options"
       :key="option.value"
       :variant="option.isSelected ? 'fill' : 'light'"
       @click="select(option.value)"
     >
       {{ option.value }}
-    </HChip>
+    </AChip>
   </div>
 </template>

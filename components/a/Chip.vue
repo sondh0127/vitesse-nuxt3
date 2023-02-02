@@ -48,6 +48,10 @@ const emit = defineEmits<{
   (e: 'click:appendIcon'): void
 }>()
 
+defineOptions({
+  name: 'AChip',
+})
+
 const attrs = useAttrs()
 
 const { getLayerClasses } = useLayer()

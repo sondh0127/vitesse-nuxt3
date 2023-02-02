@@ -1,35 +1,35 @@
 <template>
   <div class="grid-row">
-    <HAlert variant="outline">
+    <AAlert variant="outline">
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert
+    <AAlert
       color="success"
       variant="outline"
     >
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert
+    <AAlert
       color="info"
       variant="outline"
     >
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert
+    <AAlert
       color="warning"
       variant="outline"
     >
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
 
-    <HAlert
+    <AAlert
       color="danger"
       variant="outline"
     >
       Fruitcake I love liquorice apple pie croissant.
-    </HAlert>
+    </AAlert>
   </div>
 </template>

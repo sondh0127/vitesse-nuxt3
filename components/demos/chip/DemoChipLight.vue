@@ -1,17 +1,17 @@
 <template>
   <div class="flex flex-wrap gap-2">
-    <HChip>Primary</HChip>
-    <HChip color="success">
+    <AChip>Primary</AChip>
+    <AChip color="success">
       Success
-    </HChip>
-    <HChip color="info">
+    </AChip>
+    <AChip color="info">
       Info
-    </HChip>
-    <HChip color="warning">
+    </AChip>
+    <AChip color="warning">
       Warning
-    </HChip>
-    <HChip color="danger">
+    </AChip>
+    <AChip color="danger">
       Danger
-    </HChip>
+    </AChip>
   </div>
 </template>

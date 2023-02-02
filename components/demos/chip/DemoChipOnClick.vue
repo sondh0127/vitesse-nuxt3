@@ -6,13 +6,13 @@ const isLightOn = ref(true)
 
 <template>
   <div class="h-8">
-    <HChip
+    <AChip
       :icon="isLightOn ? 'i-bx-bxs-moon' : 'i-bx-bxs-sun'"
       :variant="isLightOn ? 'outline' : 'fill'"
       :color="isLightOn ? 'primary' : 'warning'"
       @click="isLightOn = !isLightOn"
     >
       {{ isLightOn ? 'Turn off light' : 'Turn on light' }}
-    </HChip>
+    </AChip>
   </div>
 </template>

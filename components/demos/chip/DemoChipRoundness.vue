@@ -1,36 +1,36 @@
 <template>
   <div class="flex flex-wrap gap-2">
-    <HChip
+    <AChip
       class="rounded-0"
     >
       rounded-0
-    </HChip>
+    </AChip>
 
-    <HChip
+    <AChip
       color="success"
       class="rounded"
     >
       rounded
-    </HChip>
+    </AChip>
 
-    <HChip
+    <AChip
       color="info"
       class="rounded-lg"
     >
       rounded-lg
-    </HChip>
+    </AChip>
 
-    <HChip
+    <AChip
       color="warning"
       class="rounded-xl"
     >
       rounded-xl
-    </HChip>
+    </AChip>
 
-    <HChip
+    <AChip
       color="danger"
     >
       default
-    </HChip>
+    </AChip>
   </div>
 </template>

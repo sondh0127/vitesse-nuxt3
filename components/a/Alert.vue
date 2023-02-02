@@ -46,6 +46,10 @@ const emit = defineEmits<{
   (e: 'update:modelValue', value: (ExtractPropTypes<typeof props>)['modelValue']): void
 }>()
 
+defineOptions({
+  name: 'AAlert',
+})
+
 const { internalState: isAlertVisible, toggle: toggleAlertVisibility } = useInternalBooleanState(toRef(props, 'modelValue'), emit, 'update:modelValue', true)
 
 const spacing = useSpacing(toRef(props, 'spacing'))

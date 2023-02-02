@@ -1,4 +1,5 @@
 import Inspector from 'vite-plugin-vue-inspector'
+import DefineOptions from 'unplugin-vue-define-options/vite'
 
 export default defineNuxtConfig({
   modules: [
@@ -25,6 +26,16 @@ export default defineNuxtConfig({
       Inspector({
         appendTo: 'entry.mjs',
       }),
+      DefineOptions(),
     ],
+  },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        types: [
+          'unplugin-vue-define-options/macros-global',
+        ],
+      },
+    },
   },
 })

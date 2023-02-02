@@ -47,11 +47,11 @@ const shortcuts: Exclude<Preset['shortcuts'], undefined | StaticShortcutMap> = [
     'a-alert': 'a-context em:spacing:p-4 font-medium em:spacing:rounded-lg em:spacing:gap-x-2',
 
     // 👉 Avatar
-    'a-avatar': 'text-2xl em:spacing:h-8 em:spacing:w-8 rounded-full',
+    'a-avatar': 'a-context text-2xl em:spacing:h-8 em:spacing:w-8 rounded-full',
 
     // 👉 Badge
     // with text-xs, 1.6666666667em => 20px
-    'a-badge': 'em:spacing:px-[0.3333333333em] rounded-full spacing:h-[1.6666666667em] spacing:min-w-[1.6666666667em] flex justify-center items-center text-white em:text-xs font-medium z-[1] whitespace-nowrap',
+    'a-badge': 'a-context em:spacing:px-[0.3333333333em] rounded-full spacing:h-[1.6666666667em] spacing:min-w-[1.6666666667em] flex justify-center items-center text-white em:text-xs font-medium z-[1] whitespace-nowrap',
     'a-badge-dot': 'spacing:min-w-[0.666666666666667em] spacing:h-[0.666666666666667em]',
 
     // with text-xs, outline: 0.166666666666667em => 2px
@@ -78,11 +78,11 @@ const shortcuts: Exclude<Preset['shortcuts'], undefined | StaticShortcutMap> = [
     // 'a-base-input-child': 'autofill-bg-transparent',
 
     // 👉 Button
-    'a-btn': 'em:spacing:px-4 font-medium em:spacing:rounded-lg em:spacing:gap-x-2 em:spacing:h-10 focus-visible:ring-2 ring-offset-2',
+    'a-btn': 'a-context em:spacing:px-4 font-medium em:spacing:rounded-lg em:spacing:gap-x-2 em:spacing:h-10 focus-visible:ring-2 ring-offset-2',
     'a-btn-icon-only': 'font-medium em:spacing:rounded-lg em:spacing:h-10 em:spacing:w-10 i:em:text-lg focus-visible:ring-2 ring-offset-2',
 
     // 👉 Card
-    'a-card': 'em:spacing:rounded-lg shadow-lg',
+    'a-card': 'a-context em:spacing:rounded-lg shadow-lg',
     'a-card-typography-wrapper': 'a-card-padding next:pt-0 em:spacing:not-last:pb-4',
     'a-card-padding': 'em:spacing:p-5',
     'a-card-spacer': 'not-last-children-mb-$a-card-spacer',

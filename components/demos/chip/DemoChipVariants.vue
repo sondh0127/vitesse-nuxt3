@@ -1,40 +1,40 @@
 <template>
   <div class="grid gap-2">
     <div class="flex gap-x-2">
-      <HChip>Primary</HChip>
-      <HChip variant="fill">
+      <AChip>Primary</AChip>
+      <AChip variant="fill">
         Primary
-      </HChip>
-      <HChip variant="outline">
+      </AChip>
+      <AChip variant="outline">
         Primary
-      </HChip>
-      <HChip variant="text">
+      </AChip>
+      <AChip variant="text">
         Primary
-      </HChip>
+      </AChip>
     </div>
 
     <div class="flex gap-x-2">
-      <HChip color="info">
+      <AChip color="info">
         Primary
-      </HChip>
-      <HChip
+      </AChip>
+      <AChip
         color="info"
         variant="fill"
       >
         Primary
-      </HChip>
-      <HChip
+      </AChip>
+      <AChip
         color="info"
         variant="outline"
       >
         Primary
-      </HChip>
-      <HChip
+      </AChip>
+      <AChip
         color="info"
         variant="text"
       >
         Primary
-      </HChip>
+      </AChip>
     </div>
   </div>
 </template>
