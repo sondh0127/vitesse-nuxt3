@@ -1,3 +1,5 @@
+import Inspector from 'vite-plugin-vue-inspector'
+
 export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
@@ -10,9 +12,19 @@ export default defineNuxtConfig({
     inlineSSRStyles: false,
   },
   css: [
-    '@unocss/reset/tailwind.css',
+    // SECTION anu css
+    '@/assets/scss/anu.scss',
+    '@/packages/preset-theme-default/scss/index.scss',
+    // !SECTION
   ],
   colorMode: {
     classSuffix: '',
+  },
+  vite: {
+    plugins: [
+      Inspector({
+        appendTo: 'entry.mjs',
+      }),
+    ],
   },
 })

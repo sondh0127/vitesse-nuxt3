@@ -1,0 +1,33 @@
+<template>
+  <div class="flex flex-wrap gap-2">
+    <HChip
+      variant="outline"
+    >
+      Primary
+    </HChip>
+    <HChip
+      color="success"
+      variant="outline"
+    >
+      Success
+    </HChip>
+    <HChip
+      color="info"
+      variant="outline"
+    >
+      Info
+    </HChip>
+    <HChip
+      color="warning"
+      variant="outline"
+    >
+      Warning
+    </HChip>
+    <HChip
+      color="danger"
+      variant="outline"
+    >
+      Danger
+    </HChip>
+  </div>
+</template>

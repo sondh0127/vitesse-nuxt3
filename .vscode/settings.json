@@ -6,5 +6,36 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  // Extension: Comment Anchors
+  "commentAnchors.tags.displayLineNumber": false,
+  "commentAnchors.workspace.enabled": false,
+  "commentAnchors.showCursor": true,
+  "commentAnchors.tags.displayTagName": false,
+  "commentAnchors.tags.list": [
+    {
+      "tag": "ℹ️",
+      "scope": "hidden",
+      // This color is taken from "Better Comments" Extension (?)
+      "highlightColor": "#3498DB",
+      "styleComment": true,
+      "isItalic": false
+    },
+    {
+      "tag": "👉",
+      "scope": "file",
+      // This color is taken from "Better Comments" Extension (*)
+      "highlightColor": "#98C379",
+      "styleComment": true,
+      "isItalic": false
+    },
+    {
+      "tag": "❗",
+      "scope": "hidden",
+      // This color is taken from "Better Comments" Extension (*)
+      "highlightColor": "#FF2D00",
+      "styleComment": true,
+      "isItalic": false
+    }
+  ]
 }
