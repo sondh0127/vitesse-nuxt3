@@ -6,7 +6,7 @@
 */
 html.scroll-lock {
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: var(--window-scroll-top);
   width: 100%;
 }
