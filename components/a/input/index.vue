@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { defu } from 'defu'
 import type { ExtractPropTypes } from 'vue'
-import { ABaseInput, baseInputProps } from '@/components/a/base-input'
+import ABaseInput from '@/components/a/base-input/index.vue'
+import { baseInputProps } from '@/components/a/base-input/props'
 
 const props = defineProps(defu({
   modelValue: [String, Number],
