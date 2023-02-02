@@ -9,6 +9,9 @@
     "postinstall": "nuxi prepare",
     "generate": "nuxi generate"
   },
+  "dependencies": {
+    "@floating-ui/dom": "^1.1.1"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.1",
     "@iconify-json/bx": "^1.1.5",
