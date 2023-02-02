@@ -58,12 +58,7 @@ export default defineConfig({
     }),
     // anu-vue presets
     presetAnu(),
-    presetThemeDefault({
-      shortcutOverrides: {
-        'a-chip': 'rounded-15px inline-flex items-center gap-x-4px px-8px py-2px h-fit whitespace-nowrap text-12px leading-18px font-500 bg-context text-textContext',
-        'a-chip-disabled': 'opacity-50 pointer-events-none',
-      },
-    }),
+    presetThemeDefault(),
     presetTypography(),
     presetWebFonts({
       fonts: {

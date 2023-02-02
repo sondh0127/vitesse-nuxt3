@@ -40,7 +40,7 @@ const shortcuts: Exclude<Preset['shortcuts'], undefined | StaticShortcutMap> = [
     'text-light-emphasis': 'text-[hsla(var(--a-base-color),var(--a-text-emphasis-light-opacity))]',
 
     // 👉 - Context proxy
-    'a-context': 'bg-context text-textContext',
+    'a-context': 'bg-context text-textContext border-borderContext',
 
     // SECTION Components
     // 👉 Alert

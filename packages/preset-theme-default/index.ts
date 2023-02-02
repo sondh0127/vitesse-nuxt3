@@ -13,6 +13,7 @@ interface PresetOptions {
 const themeColors = {
   context: 'var(--a-c-context)',
   textContext: 'var(--a-t-c-context)',
+  borderContext: 'var(--a-b-c-context)',
   primary: 'hsl(var(--a-primary))',
   primaryLight: 'hsl(var(--a-primary-light))',
   textPrimaryLight: 'hsl(var(--a-text-primary-light))',
@@ -45,6 +46,7 @@ export function presetThemeDefault(options: PresetOptions = {}): Preset {
       ...colors.map(c => `[--a-layer-color:hsla(var(--a-${c}),var(--un-bg-opacity,1))]`),
       ...colors.map(c => `a-${c}`),
       ...colors.map(c => `a-t-${c}`),
+      ...colors.map(c => `a-b-${c}`),
       ...colors.map(c => `bg-${c}`),
       ...colors.map(c => `hover:bg-${c}`),
 

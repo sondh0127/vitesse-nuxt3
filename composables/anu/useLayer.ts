@@ -1,3 +1,4 @@
+// @unocss-include
 import type { MaybeRef } from '@vueuse/core'
 import { defu } from 'defu'
 import type { ComponentObjectPropsOptions } from 'vue'
@@ -143,11 +144,13 @@ export const useLayer = () => {
       else if (propVariant === 'outline') {
         // Border
         classes.push('border-width-1', 'border-solid')
-        styles.push({ borderColor: `hsl(var(--a-${propColor})` })
+        classes.push(`a-b-${propColor}`)
+        // styles.push({ borderColor: `hsl(var(--a-${propColor})` })
 
         // Text
         if (propColor !== undefined && propColor !== null)
-          classes.push(`text-${propColor}`)
+          // classes.push(`text-${propColor}`)
+          classes.push(`a-t-${propColor}`)
 
         // Loader overlay
         styles.push({ '--a-loader-overlay-bg': 'hsl(var(--a-layer))' })

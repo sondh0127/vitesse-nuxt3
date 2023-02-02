@@ -10,20 +10,20 @@
     "generate": "nuxi generate"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.0",
+    "@antfu/eslint-config": "^0.35.1",
     "@iconify-json/bx": "^1.1.5",
     "@iconify-json/carbon": "^1.1.14",
     "@iconify-json/twemoji": "^1.1.10",
     "@nuxtjs/color-mode": "^3.2.0",
     "@pinia/nuxt": "^0.4.6",
-    "@unocss/nuxt": "^0.49.1",
-    "@vueuse/nuxt": "^9.11.1",
+    "@unocss/nuxt": "^0.49.2",
+    "@vueuse/nuxt": "^9.12.0",
     "eslint": "^8.33.0",
     "nuxt": "^3.1.1",
-    "pinia": "^2.0.29",
+    "pinia": "^2.0.30",
     "sass": "^1.58.0",
-    "typescript": "^4.9.4",
-    "unplugin-vue-define-options": "^1.1.1",
+    "typescript": "^4.9.5",
+    "unplugin-vue-define-options": "^1.2.0",
     "vite-plugin-vue-inspector": "^3.2.1"
   }
 }
