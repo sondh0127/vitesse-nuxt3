@@ -22,11 +22,13 @@ export function useGroupModel<T>(params: ComposableParams<T>) {
 
   const value = ref<T | number | Set<T | number> | undefined>()
 
+  const isSetValue = computed(() => value.value instanceof Set)
+
   const select = (option: T | number) => {
     // If multiple selection is enabled
     if (unref(multi)) {
       // If value is not set (Means previously multi was false) => Initialize new set and assign it to value
-      if (!(value.value instanceof Set)) {
+      if (!(isSetValue.value)) {
         value.value = new Set([option])
       }
       else {
@@ -53,7 +55,7 @@ export function useGroupModel<T>(params: ComposableParams<T>) {
     _options.value = [...Array(options)].map((_, i) => ({
       value: i as T,
       isSelected: computed(() => unref(multi)
-        ? value.value instanceof Set ? value.value.has(i) : false
+        ? isSetValue.value ? value.value.has(i) : false
         : i === value.value,
       ),
     }))
@@ -66,7 +68,7 @@ export function useGroupModel<T>(params: ComposableParams<T>) {
         if (unref(multi))
 
           // If value is Set => if value exist in set then its Selected else not
-          return value.value instanceof Set ? value.value.has(option) : false
+          return isSetValue.value ? value.value.has(option) : false
 
         else
 
@@ -79,6 +81,7 @@ export function useGroupModel<T>(params: ComposableParams<T>) {
   return {
     options: _options,
     value,
+    valueRaw: computed(() => isSetValue.value ? Array(value.value): value.value),
     select,
   }
 }
